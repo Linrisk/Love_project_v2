@@ -1,0 +1,366 @@
+body, html{
+    padding: 0;
+    margin:0;
+    background-color: #2E2B2B;
+}
+.container{
+display: flex;
+flex-direction: column;
+top:0;
+bottom: 0;
+position: fixed;
+left: 0;
+right: 0;
+background-color: #2E2B2B;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 0;
+margin-bottom: 0;
+min-width: 100%;
+min-height: 100%;
+}
+.container-4{
+    display: none;
+    flex-direction: column;
+    top:0;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 350;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    }
+
+.container-2{
+    display: none;
+    flex-direction: column;
+    top:0;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #2E2B2B;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    }
+
+    .container-3{
+        display: none;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #2E2B2B;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        min-width: 100%;
+        z-index: 200;
+        min-height: 100%;
+        }
+h3{
+    display: block;
+    z-index: 150;
+}
+
+.element{
+    z-index: 300;
+    display: none;
+    top:0;
+    bottom: 0;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+        #heart-2{
+            border: none;
+            z-index: 1000;
+            width: 50%;
+            height: 50%;
+            scale: 1;
+            display: flex;
+            animation: pulsate 3s infinite;
+            }
+            
+            @keyframes pulsate {
+            0% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.5);
+            }
+            100% {
+            transform: scale(1);
+            }
+            }
+/*
+#heart-2:active{ 
+    animation: zoom 20s;
+    }
+
+    @keyframes zoom {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+            transform: scale(50);
+        }
+        75%{
+           transform:  scale(75);
+        }
+        100% {
+        transform: scale(100);
+        }
+        }
+    
+        */
+@font-face {
+    font-family: "Lovelo";
+    src: url(Lovelo-Black/Lovelo_Black.ttf) format("ttf"),
+           url("Lovelo-Black/Lovelo_Black.woff") format("woff");
+   }
+
+.title-lovep,.ready, .title-welcome, .wait-title, .feeling-title,.cards{
+   
+    font-family: Lovelo;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+margin-top: -6%;}
+
+.card-1{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+   
+    height: 75%;
+    border-radius: 4%;
+    flex-direction: column;
+    box-shadow:18px 17px 13px -6px #242222 ;background:rgba(181,65,116,0.73);
+}
+.card-1:hover{
+    background:rgba(181,65,116,1);}
+  
+.grid-card-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.card-2{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background:rgba(163,134,20,0.84);
+    height: 75%;
+    border-radius: 4%;
+    flex-direction: column;
+box-shadow: 6px 17px 13px -6px #242222 ;}
+.grid-card-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.card-2:hover{
+    background:rgba(163,134,20,1);}
+#smile{
+    height: 75%;
+    width: 75%;
+}
+.card-3{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 75%;
+    border-radius: 4%;
+    flex-direction: column;
+    box-shadow: 6px 17px 13px -6px #242222 ; background:rgba(94, 166, 214, 0.83);
+}
+
+.card-3:hover{
+    background:rgba(94, 166, 214,1);}
+  
+    .grid-card-3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .words{
+        display: none;
+    }
+
+.card-4{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 75%;
+    border-radius: 4%;
+    flex-direction: column;
+    box-shadow: -38px 17px 13px -6px #242222 ;background: rgba(235, 235, 235, 0.92);
+}
+.grid-card-4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.card-4:hover{
+    background: rgba(235, 235, 235, 1); }
+  
+
+#power{
+    height: 75%;
+    width: 75%;
+    bottom: 0;
+}
+#heart{
+    height: 75%;
+    width: 75%;
+    bottom: 0;
+}
+#sad{
+    height: 75%;
+    width: 75%;
+    bottom: 0;
+}
+
+
+.ready {
+    width:20%;
+    height: 10%;
+    font-size:48px;
+    border-radius:50px;
+    margin-top: -8rem;
+    background-color: #D36464;
+    border:none;
+}
+
+.title-welcome{
+    
+    font-size:88px;
+    color:#fff;
+}
+
+.title-lovep{
+    font-size:171px;
+    color:#D36464;margin-top: -6%;
+}
+.feeling-title{
+    color: #fff;
+    font-size: 600%;
+    box-shadow: 6px 17px 13px -6px #242222 ;
+}
+.motivation, .chill, .notmyday{
+    color: rgba(235, 235, 235, 1);
+    font-size: 200%;
+    text-align: center;
+    align-items: center;
+}
+.idk{
+    color: grey;
+    font-size: 200%;
+}
+
+/* Responsive */
+/*tablette */
+@media(min-width: 768px) and (max-width: 1388px){
+.card-1{
+    height: 50%;
+}
+.card-2{
+    height: 50%;
+}
+
+.card-3{
+    height: 50%;
+}
+.card-4{
+    height: 50%;
+}
+
+}
+/* telephone */
+
+@media(max-width: 767px)
+{
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+margin-top: -6%;
+}
+}
+
+#restart, #print {
+    display: none;
+    border-radius: 10%;
+    font-family: Lovelo;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#element{
+    font-size: 70px;
+    font-family: Lovelo;
+    color:#D36464;
+}
+.atts{
+    
+    color:#252222;
+}
+
+.words{
+    font-size: 70px;
+    font-family: Lovelo;
+}
+button{
+    border: none;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+
+}
+
+#restart{
+    margin-right: 1rem;
+}
+#print{
+    margin-left: 1rem;
+}
